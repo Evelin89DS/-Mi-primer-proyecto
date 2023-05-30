@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Encriptador de Texto</title>
+    <link href="https: //fonts.googleapis.com/css2? family= Inter:wght@300 & display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="Image/Vector.png" alt=""  id="logo"></img>
+        </div>
+         <div class="encriptar">
+           <textarea
+            name="texto"
+            class="texto"
+            id="texto"
+            cols="30"
+            rows="10"
+            placeholder="Ingresa el texto aquí"
+        ></textarea>
+      
+       <div class="terminos">
+        <p>Solo letras minusculas y sin acentos.</p>
+       </div>
+
+       <div class="botones">
+        <button class="btn-Encriptar" type="button" onclick="encriptar()">
+        Encriptar
+        </button>
+        <button class="btn-Desencriptar" type="button" onclick="desencriptar()">
+        Desencriptar
+        </button>
+        </div>
+
+        </div>
+      <div class="encriptado">
+        <img src="Image/Muñeco.png" alt="" id="muñeco"></img>
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+            <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+            <p id="parrafo">
+                Ingresa el texto que deseas encriptar o desencriptar
+            </p>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            <button class="btn-Copiar" type="button" onclick="copiar()">
+                Copiar
+            </button>
+        </div>
+
+     
+        </div>
+    </div>
+
+</body>
+
+<div class="footer">
+    <p> By Evelin Gonzalez</p>
+    <p>&copy; 2023. Todos los derechos reservados.</p>
+</div>
+
+<script src="index.js"></script>
+</html>
